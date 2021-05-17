@@ -1,2 +1,3 @@
+*__SINGLE_L=0;
+*__SINGLE_B=0;
 *__SINGLE_P=0;
-*__SINGLE_S=0;

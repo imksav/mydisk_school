@@ -1,5 +1,6 @@
+float *__SINGLE_L=NULL;
+float *__SINGLE_B=NULL;
 float *__SINGLE_P=NULL;
-float *__SINGLE_S=NULL;
 int32 console=0;
 int32 screen_hide_startup=0;
 int32 asserts=0;

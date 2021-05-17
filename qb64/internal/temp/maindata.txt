@@ -1,8 +1,12 @@
+if(__SINGLE_L==NULL){
+__SINGLE_L=(float*)mem_static_malloc(4);
+*__SINGLE_L=0;
+}
+if(__SINGLE_B==NULL){
+__SINGLE_B=(float*)mem_static_malloc(4);
+*__SINGLE_B=0;
+}
 if(__SINGLE_P==NULL){
 __SINGLE_P=(float*)mem_static_malloc(4);
 *__SINGLE_P=0;
-}
-if(__SINGLE_S==NULL){
-__SINGLE_S=(float*)mem_static_malloc(4);
-*__SINGLE_S=0;
 }

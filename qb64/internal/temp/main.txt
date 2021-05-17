@@ -3,38 +3,44 @@ do{
 sub_cls(NULL,NULL,0);
 if(!qbevent)break;evnt(1);}while(r);
 do{
-*__SINGLE_P= 1 ;
+qbs_print(qbs_new_txt_len("Enter length:",13),0);
+qbs_print(qbs_new_txt("? "),0);
+qbs_input_variabletypes[1]=536870944;
+qbs_input_variableoffsets[1]=&(*__SINGLE_L);
+qbs_input(1,1);
+if (stop_program) end();
+qbs_cleanup(qbs_tmp_base,0);
 if(!qbevent)break;evnt(2);}while(r);
-S_3:;
-while((-(*__SINGLE_P<= 10 ))||new_error){
-if(qbevent){evnt(3);if(r)goto S_3;}
 do{
-*__SINGLE_S=*__SINGLE_S+*__SINGLE_P;
+qbs_print(qbs_new_txt_len("Enter breadth:",14),0);
+qbs_print(qbs_new_txt("? "),0);
+qbs_input_variabletypes[1]=536870944;
+qbs_input_variableoffsets[1]=&(*__SINGLE_B);
+qbs_input(1,1);
+if (stop_program) end();
+qbs_cleanup(qbs_tmp_base,0);
+if(!qbevent)break;evnt(3);}while(r);
+do{
+*__SINGLE_P= 2 *(*__SINGLE_L+*__SINGLE_B);
 if(!qbevent)break;evnt(4);}while(r);
 do{
-*__SINGLE_P=*__SINGLE_P+ 1 ;
-if(!qbevent)break;evnt(5);}while(r);
-ww_continue_1:;
-}
-ww_exit_1:;
-do{
 tqbs=qbs_new(0,0);
-qbs_set(tqbs,qbs_new_txt_len("Sum of natural number is",24));
-if (new_error) goto skip2;
+qbs_set(tqbs,qbs_new_txt_len("Perimeter of a rectangle is",27));
+if (new_error) goto skip1;
 makefit(tqbs);
 qbs_print(tqbs,0);
-qbs_set(tqbs,qbs_add(qbs_str((float)(*__SINGLE_S)),qbs_new_txt(" ")));
-if (new_error) goto skip2;
+qbs_set(tqbs,qbs_add(qbs_str((float)(*__SINGLE_P)),qbs_new_txt(" ")));
+if (new_error) goto skip1;
 makefit(tqbs);
 qbs_print(tqbs,0);
 qbs_print(nothingstring,1);
-skip2:
+skip1:
 qbs_free(tqbs);
 qbs_cleanup(qbs_tmp_base,0);
-if(!qbevent)break;evnt(7);}while(r);
+if(!qbevent)break;evnt(5);}while(r);
 do{
 sub_end();
-if(!qbevent)break;evnt(8);}while(r);
+if(!qbevent)break;evnt(6);}while(r);
 sub_end();
 return;
 }
